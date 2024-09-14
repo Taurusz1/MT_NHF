@@ -4,3 +4,6 @@ WORKDIR /work
 ADD main.py .
 CMD ["python", "./main.py"] 
 # Or enter the name of your unique directory and parameter set.
+
+# build: docker build -t python-imagename .
+# run: docker run python-imagename
