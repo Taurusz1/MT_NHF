@@ -39,6 +39,8 @@ In the browser you will see a directory, choose `main.ipynb`
 
 In there you can start running the code cell-by-cell
 
+### Running the Pipeline, Models and Evaluations
+
 Running the pipline: run the code cell-by-cell
 
 Running the models: There are two models, one random choosing and one basic neural network.
