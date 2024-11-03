@@ -37,4 +37,11 @@ Three links will be given, choose the link starting with: "<http://127.0.0.1:888
 
 In the browser you will see a directory, choose `main.ipynb`
 
-In there you can start running the code cell by cell
+In there you can start running the code cell-by-cell
+
+Running the pipline: run the code cell-by-cell
+
+Running the models: There are two models, one random choosing and one basic neural network.
+You will find these by the header texts. First define the models, then run the prediction or fit the model and then predict.
+
+Running the Evaluation: After every model prediction, there is an evaluation step in the same cell that displays the results.
