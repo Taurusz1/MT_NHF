@@ -41,11 +41,14 @@ In there you can start running the code cell-by-cell
 
 ### Running the Pipeline, Models and Evaluations
 
-Running the pipline: run the code cell-by-cell
+Running the pipline: Run the code cell-by-cell. After the "Iterative Neural Network Development" header, there is two important cells, "Image Augmentation" and "Advanced Evaluation", don't forget to run these cells before running the models.
 
 Running the models: There are five models:
-2 baseline models: one random choosing and one basic neural network.
-3 Neural Networks for Iterative Development: one Resnet Model (Model 1), one simplified ResNet model (Model 2), one overly simplified ResNet Model (Model 3) and one Improved Neural Network (Model 4).
-You will find these by the header texts, after every model there is an Evaluation Header. Run every cell in order to get correct output.
 
-Running the Evaluation: After every model prediction, there is an evaluation step in the same cell that displays the results.
+2 baseline models: one random choosing and one basic neural network.
+
+3 Neural Networks for Iterative Development: one Resnet Model (Model 1), one simplified ResNet model (Model 2), one overly simplified ResNet Model (Model 3) and one Improved Neural Network (Model 4).
+
+You will find these by the header texts. Run the cell to define and train the model.
+
+Running the Evaluation: After training the model, there is an evaluation step in the same cell that displays the results.
