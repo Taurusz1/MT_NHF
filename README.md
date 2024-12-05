@@ -43,7 +43,9 @@ In there you can start running the code cell-by-cell
 
 Running the pipline: run the code cell-by-cell
 
-Running the models: There are two models, one random choosing and one basic neural network.
-You will find these by the header texts. First define the models, then run the prediction or fit the model and then predict.
+Running the models: There are five models:
+2 baseline models: one random choosing and one basic neural network.
+3 Neural Networks for Iterative Development: one Resnet Model (Model 1), one simplified ResNet model (Model 2), one overly simplified ResNet Model (Model 3) and one Improved Neural Network (Model 4).
+You will find these by the header texts, after every model there is an Evaluation Header. Run every cell in order to get correct output.
 
 Running the Evaluation: After every model prediction, there is an evaluation step in the same cell that displays the results.
