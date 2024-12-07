@@ -4,6 +4,7 @@ scikit-learn==1.5.2
 joblib==1.4.2
 scipy==1.14.1
 threadpoolctl==3.5.0
-tensorflow==2.18.0
-numpy==1.25.0
-gradio==3.36.1
+tensorflow-cpu==2.18.0
+numpy==1.26.0
+gradio==3.44.2
+jupyter==1.0.0

@@ -1,26 +1,27 @@
-# Use an official Python runtime as a base image
 FROM python:3.10-slim
-# Set the working directory in the container
-WORKDIR /app
-# Install dependencies
-RUN apt-get update && apt-get install -y \
-    wget \
-    unzip 
-# Copy the requirements.txt file (if you have one for dependencies)
-COPY requirements.txt .
-# Alse copy every file
-COPY . .
-# Install Python dependencies
-RUN pip install --no-cache-dir --upgrade pip \
-    && pip install --no-cache-dir jupyter 
-RUN pip install --no-cache-dir -r requirements.txt
-# Expose port 8888 to access Jupyter Notebook
-EXPOSE 8888
-# Set the default command to start Jupyter Notebook
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--allow-root"]
 
-# build: docker build -t mt-hf-notebook .
-# run: docker run -it -p 8888:8888 mt-hf-notebook
+ENV GRADIO_SERVER_PORT=7860
+ENV TF_CPP_MIN_LOG_LEVEL=2
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    wget \
+    unzip \
+    build-essential \
+    libjpeg-dev \
+    zlib1g-dev \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+COPY . /app
+
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt
+
+EXPOSE 8888 ${GRADIO_SERVER_PORT}
+
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''"]
+
 
 
 
