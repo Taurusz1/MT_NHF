@@ -35,7 +35,7 @@ Run with: `docker run -it -p 8888:8888 mt-hf-notebook`
 
 Three links will be given, choose the link starting with: "<http://127.0.0.1:8888/tree?token=>..."
 
-In the browser you will see a directory, choose `main.ipynb`
+In the browser you will see a directory, choose `MT_NHF.ipynb`
 
 In there you can start running the code cell-by-cell
 
