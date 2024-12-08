@@ -17,9 +17,9 @@ dockerfile: Building and running the docker container
 
 requirements.txt: Contains the required package names and versions
 
-ReadMe: Containts documentation
+ReadMe: Contains documentation
 
-main.ipynb: Containts the code of the project
+main.ipynb: Contains the code of the project
 
 ## Related Works
 
