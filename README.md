@@ -31,11 +31,11 @@ Related paper: <https://arxiv.org/abs/1512.03385>
 
 Build with: `docker build -t mt-hf-notebook .`
 
-Run with: `docker run -it -p 8888:8888 mt-hf-notebook`
+Run with: `docker run -it -p 8888:8888 -p 7860:7860 mt-hf-notebook`
 
-Three links will be given, choose the link starting with: "<http://127.0.0.1:8888/tree?token=>..."
+Three links will be given, choose the link starting with: "<http://127.0.0.1:8888/tree."
 
-In the browser you will see a directory, choose `MT_NHF.ipynb`
+In the browser you will see a directory, choose `mt_nhf.ipynb`
 
 In there you can start running the code cell-by-cell
 
